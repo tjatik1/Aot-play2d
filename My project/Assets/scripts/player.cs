@@ -28,18 +28,18 @@ public class player : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && jump == false)
         {
             rigidbody.velocity = new Vector3(0, jumpVelocity, 0);
-            animator.SetBool("jump", true);
+            animator.SetBool("Jump", true);
             jump = true;
         }
     }
 
 
-    private void OnCollisionEnter2d(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "LocationTemplate")
         {
             animator.SetBool("Jump", false);
-            jump=false;
+            jump = false;
         }
         if(other.gameObject.tag == "Obstacle")
         {
