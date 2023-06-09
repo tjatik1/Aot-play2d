@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class grounds : MonoBehaviour
 {
-    [SerializeField] private GameObject templatePlatforms;
+    [SerializeField] private GameObject[] templatePlatforms;
 
     private GameObject spawnPlatforms;
 
@@ -17,6 +17,6 @@ public class grounds : MonoBehaviour
     
     private void Platforms()
     {
-        spawnPlatforms = Instantiate(templatePlatforms, transform.position, Quaternion.identity) as GameObject;
+        Instantiate (templatePlatforms[Random.Range(0, templatePlatforms.Length)], transform.position, Quaternion.identity);
     }
 }
