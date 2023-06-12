@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class player : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class player : MonoBehaviour
 
     [SerializeField] private float jumpVelocity = 20;//сила прыжка
 
+    [SerializeField] private GameObject PlayerUI;//Юзер интерфейс игрока
     private Animator animator;
 
     private Rigidbody2D rigidbody;
@@ -45,6 +46,7 @@ public class player : MonoBehaviour
         {
             DeathScreen.SetActive(true);
             Time.timeScale = 0f;
+            PlayerUI.SetActive(false);
         }
     }
 }
