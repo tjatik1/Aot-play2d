@@ -411,7 +411,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1887789731, guid: d7a3c2de48bede640abec61381eb574e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -431,7 +431,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4779041650522330013}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -494,7 +494,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.048411366, y: 0.106991746}
+    - - {x: -0.04799006, y: 0.10056822}
       - {x: -0.05037635, y: 0.008957533}
       - {x: -0.018308587, y: 0.0074506956}
       - {x: -0.022472221, y: -0.08468318}
@@ -503,7 +503,7 @@ PolygonCollider2D:
       - {x: 0.026251521, y: -0.08064588}
       - {x: 0.028631937, y: 0.013108224}
       - {x: 0.059470434, y: 0.019397857}
-      - {x: 0.065, y: 0.11}
+      - {x: 0.06415736, y: 0.10143529}
   m_UseDelaunayMesh: 0
 --- !u!95 &1681778689205399246
 Animator:
